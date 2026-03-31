@@ -10,12 +10,12 @@ jobs:
     steps:
     - run: date
   macros:  
-    runs-on: macos-latest
+    runs-on: macros-latest
     steps:
     - run: date
   depends:
     needs: [ubuntu, windows, macros]
-    runs-on: macro-latest
+    runs-on: macros-latest
     steps:
     - run: date
   
