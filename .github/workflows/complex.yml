@@ -9,13 +9,13 @@ jobs:
     runs-on: windows-latest
     steps:
     - run: date
-  macros:  
-    runs-on: macros-latest
+  macos:  
+    runs-on: macos-latest
     steps:
     - run: date
   depends:
-    needs: [ubuntu, windows, macros]
-    runs-on: macros-latest
+    needs: [ubuntu, windows, macos]
+    runs-on: macos-latest
     steps:
     - run: date
   
